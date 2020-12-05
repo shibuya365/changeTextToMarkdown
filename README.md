@@ -19,11 +19,9 @@
 ---
  
 # Features
+ 多彩なサブコマンドで必要な部分のみ変更可能
  
-"hoge"のセールスポイントや差別化などを説明する
- 
-# Requirement
- 
+# Requirement 
 * go
 * go-runewidth
  
@@ -32,9 +30,8 @@ goのインストール
 ```bash
 go get github.com/mattn/go-runewidth
 ```
- 
-# Usage
- 
+
+# Usage 
 ```bash
 git clone https://github.com/shibuya365/changeTextToMarkdown.git
 /changeTextToMarkdown
@@ -46,8 +43,15 @@ go build .
  
 # Note
  
-必ずサブコマンド`table`の後に`youfile`を入れてコマンドを実行して下さい
- 
+必ずサブコマンド`table`の後に変更したいファイル`yourfile`を入れてコマンドを実行して下さい
+## サブコマンド一覧
+
+|コマンド        |内容              |
+|:--------------:|:----------------:|
+|`table`         |表形式に変換      |
+|`check`         |□を`- [ ] `へ変換|
+|`checked`       |✅を`- [x] `へ変換|
+(↑もこのプログラムで作りました )
 # Author
  
 * shibuya365
